@@ -1,13 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD EX10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .status {
+            padding: 20px;
+            background-color: #E3F2FD;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EX10: Applying CI/CD Principles to Web Development Using Jenkins, Git, using
+        Docker Containers
+    </h1>
+    <div class="status">
+        <p>This page will update through Jenkins CI/CD pipeline using rDocker</p>
+        <p>Last Updated: <span id="timestamp"></span></p>
+    </div>
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+    </script>
+</body>
+
 </html>
